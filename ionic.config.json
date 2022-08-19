@@ -1,0 +1,7 @@
+{
+  "name": "dog-date",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
