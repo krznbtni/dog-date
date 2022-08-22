@@ -5,10 +5,10 @@ import TabsPage from '../views/TabsPage.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    redirect: '/tabs/tab1'
+    redirect: '/map'
   },
   {
-    path: '/tabs/',
+    path: '/',
     component: TabsPage,
     children: [
       {
@@ -16,16 +16,16 @@ const routes: Array<RouteRecordRaw> = [
         redirect: '/tabs/tab1'
       },
       {
-        path: 'tab1',
-        component: () => import('@/views/Tab1Page.vue')
+        path: 'undecided',
+        component: () => import('@/views/UndecidedPage.vue')
       },
       {
-        path: 'tab2',
-        component: () => import('@/views/Tab2Page.vue')
+        path: 'map',
+        component: () => import('@/views/MapPage.vue')
       },
       {
-        path: 'tab3',
-        component: () => import('@/views/Tab3Page.vue')
+        path: 'pets',
+        component: () => import('@/views/PetsPage.vue')
       }
     ]
   }
