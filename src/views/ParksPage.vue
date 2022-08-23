@@ -22,7 +22,7 @@ import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue
 import ParksList from '@/components/ParksList.vue'
 
 const parks = [
-  {name: 'Sorgenfri'},
+  {name: 'Sorgenfrivägen'},
   {name: 'Rörsjöparken'},
   {name: 'Karlskronaplan'},
   {name: 'Enskifteshagen'},

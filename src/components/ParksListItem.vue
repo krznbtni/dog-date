@@ -1,5 +1,5 @@
 <template>
-  <ion-item button detail>
+  <ion-item button detail :href="`/parks/${park.name}`">
     <ion-label>
       <h2>{{ park.name }}</h2>
     </ion-label>
