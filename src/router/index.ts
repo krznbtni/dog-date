@@ -21,7 +21,11 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'parks',
-        component: () => import('@/views/ParksPage.vue')
+        component: () => import('@/views/ParksPage.vue'),
+      },
+      {
+        path: 'parks/:name',
+        component: () => import('@/views/ParkPage.vue')
       },
       {
         path: 'pets',
