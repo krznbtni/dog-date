@@ -8,9 +8,9 @@
           <ion-label>Undecided</ion-label>
         </ion-tab-button>
           
-        <ion-tab-button tab="map" href="/map">
+        <ion-tab-button tab="map" href="/parks">
           <ion-icon :icon="ellipse" />
-          <ion-label>Map</ion-label>
+          <ion-label>Parks</ion-label>
         </ion-tab-button>
         
         <ion-tab-button tab="pets" href="/pets">
