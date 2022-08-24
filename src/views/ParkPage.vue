@@ -22,25 +22,38 @@ import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue
 import ParkCard from '@/components/ParkCard.vue';
 
 interface Park {
-  name: string,
+  description: string,
   distance: string,
-  size: string,
+  grounds: Array<'grass' | 'gravel'>,
   images: string[],
-  rating: number,
+  name: string,
   numCurrentVisitors: number,
+  rating: number,
+  size: string,
+  address: {
+    street: string,
+    zip: string,
+    city: string,
+  },
+  // currentWeatherConditions,
+  // kommentarer
 }
 
 const park: Park = {
-  name: 'Sorgenfrivägen',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   distance: '850m',
-  size: '250m or something that makes sense',
-  images: [
-    '/assets/hundrastgard.jpg'
-  ],
+  grounds: ['grass', 'gravel'],
+  images: ['/assets/hundrastgard.jpg'],
+  name: 'Sorgenfrivägen',
+  numCurrentVisitors: 5,
   rating: 4,
-  numCurrentVisitors: 5
-}
-
+  size: '250m or something that makes sense',
+  address: {
+    street: 'Sorgenfrivägen',
+    zip: '214 41',
+    city: 'Malmö',
+  },
+};
 </script>
 
 <style>
