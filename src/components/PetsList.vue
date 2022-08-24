@@ -6,18 +6,10 @@
   </ion-list>
 </template>
 
-<script lang="ts">
-import { IonList } from '@ionic/vue';
-import { warning } from 'ionicons/icons';
-import { defineComponent } from 'vue';
+<script lang="ts" setup>
+import { IonList, IonListHeader } from '@ionic/vue';
 import PetsListItem from '@/components/PetsListItem.vue';
+import { defineProps } from 'vue';
 
-export default defineComponent({
-  components: {IonList, PetsListItem },
-  setup() {
-    return { warning,
-    
-    pets: [{name: 'Bilbo', age: '4', img: '../../public/assets/bilbo-1.jpg'}]};
-  }
-});
+const props = defineProps<{pets: Array<{name: string, age: string, img: string}>}>();
 </script>

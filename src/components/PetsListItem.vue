@@ -9,22 +9,9 @@
   </ion-item>
 </template>
 
-<script lang="ts">
-import { IonItem } from '@ionic/vue';
-import { warning } from 'ionicons/icons';
-import { defineComponent } from 'vue';
+<script lang="ts" setup>
+import { IonItem, IonAvatar, IonLabel } from '@ionic/vue';
+import {defineProps} from 'vue';
 
-export default defineComponent({
-  components: { IonItem },
-  props: {
-    pet: {
-      type: Object,
-    },
-  },
-  setup() {
-    return {
-      warning,
-    };
-  }
-});
+const props = defineProps<{pet: {name: string, age: string, img: string}}>();
 </script>
