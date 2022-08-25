@@ -12,17 +12,23 @@
         </ion-toolbar>
       </ion-header>
       
-      <PetsList :pets="pets" />
+      <PetsList :pets="userPets" />
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts" setup>
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import PetsList from '@/components/PetsList.vue';
-import {usePetStore} from '@/stores/pet';
 import { storeToRefs } from 'pinia'
+import { useUserStore } from '@/stores/user';
+import {usePetStore} from '@/stores/pet';
+import PetsList from '@/components/PetsList.vue';
 
-const store = usePetStore()
-const { pets } = storeToRefs(store)
+const petStore = usePetStore()
+const { pets } = storeToRefs(petStore)
+
+const userStore = useUserStore();
+const {user} = storeToRefs(userStore);
+
+const userPets = pets.value.filter((pet) => user.value.petIds.includes(pet.id));
 </script>

@@ -31,5 +31,5 @@ export interface IPet  {
 export interface IUser {
   id: number,
   name: string,
-  pets: Array<IPet>
+  petIds: Array<number>
 }

@@ -18,4 +18,5 @@ const petsList: Array<IPet> = [
   { id: 1, name: 'Paj', age: '3', images: ['../../public/assets/bilbo-1.jpg' ]},
   { id: 2, name: 'Sillen', age: '4', images: ['../../public/assets/bilbo-1.jpg' ]},
   { id: 3, name: 'Elton', age: '1.5', images: ['../../public/assets/bilbo-1.jpg' ]},
+  { id: 4, name: 'Malte', age: '1', images: ['../../public/assets/bilbo-1.jpg' ]},
 ];
