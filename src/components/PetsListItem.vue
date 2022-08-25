@@ -1,7 +1,7 @@
 <template>
   <ion-item button detail :href="`/profile/pets/${pet.name}`">
     <ion-avatar slot="start">
-      <img src="../../public/assets/bilbo-1.jpg" />
+      <ion-img :src="pet.images[0]" />
     </ion-avatar>
     <ion-label>
       <h2>{{ pet.name }}</h2>
@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts" setup>
-import { IonItem, IonAvatar, IonLabel } from '@ionic/vue';
+import { IonImg, IonItem, IonAvatar, IonLabel } from '@ionic/vue';
 import {defineProps} from 'vue';
 import { IPet } from '@/types';
 
