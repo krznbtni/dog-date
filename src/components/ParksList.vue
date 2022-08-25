@@ -1,6 +1,6 @@
 <template>
   <ion-list>
-    <ParksListItem v-for="park in parks" :key="park.name" :park="park" />
+    <ParksListItem v-for="park in parks" :key="park.id" :park="park" />
   </ion-list>
 </template>
 
