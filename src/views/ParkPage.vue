@@ -20,26 +20,9 @@
 <script lang="ts" setup>
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import ParkCard from '@/components/ParkCard.vue';
+import {IPark} from '@/types';
 
-interface Park {
-  description: string,
-  distance: string,
-  grounds: Array<'grass' | 'gravel'>,
-  images: string[],
-  name: string,
-  numCurrentVisitors: number,
-  rating: number,
-  size: string,
-  address: {
-    street: string,
-    zip: string,
-    city: string,
-  },
-  // currentWeatherConditions,
-  // kommentarer
-}
-
-const park: Park = {
+const park: IPark = {
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   distance: '850m',
   grounds: ['grass', 'gravel'],

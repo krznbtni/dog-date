@@ -25,24 +25,7 @@
 <script lang="ts" setup>
 import { IonGrid, IonRow, IonCol,IonCardContent, IonCard, IonCardSubtitle,IonCardTitle, IonCardHeader, IonImg} from '@ionic/vue'
 import { defineProps } from 'vue';
+import {IPark} from '@/types';
 
-interface Park {
-  description: string,
-  distance: string,
-  grounds: Array<'grass' | 'gravel'>,
-  images: string[],
-  name: string,
-  numCurrentVisitors: number,
-  rating: number,
-  size: string,
-  address: {
-    street: string,
-    zip: string,
-    city: string,
-  },
-  // currentWeatherConditions,
-  // kommentarer
-}
-
-const props = defineProps<{park: Park}>();
+const props = defineProps<{park: IPark}>();
 </script>
