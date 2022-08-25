@@ -9,6 +9,7 @@
 <script lang="ts" setup>
 import { IonItem, IonLabel } from '@ionic/vue';
 import { defineProps } from 'vue';
+import {IPark} from '@/types';
 
-const props = defineProps<{park: {name: string}}>();
+const props = defineProps<{park: IPark}>();
 </script>

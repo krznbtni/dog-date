@@ -12,7 +12,7 @@
         </ion-toolbar>
       </ion-header>
 
-      <ParksList :parks="parks" />
+      <ParksList />
     </ion-content>
   </ion-page>
 </template>
@@ -20,13 +20,6 @@
 <script lang="ts" setup>
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import ParksList from '@/components/ParksList.vue'
-
-const parks = [
-  {name: 'Sorgenfrivägen'},
-  {name: 'Rörsjöparken'},
-  {name: 'Karlskronaplan'},
-  {name: 'Enskifteshagen'},
-]
 </script>
 
 <style>
