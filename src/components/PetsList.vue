@@ -1,7 +1,7 @@
 <template>
   <ion-list>
-    <ion-list-header> Recent Conversations </ion-list-header>
-    <PetsListItem v-for="pet in pets" :key="pet.name" :pet="pet" />
+    <ion-list-header>My Pets</ion-list-header>
+    <PetsListItem v-for="pet in pets" :key="pet.id" :pet="pet" />
   </ion-list>
 </template>
 

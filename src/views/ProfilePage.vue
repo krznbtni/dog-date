@@ -2,13 +2,13 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Pets</ion-title>
+        <ion-title>Profile</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Pets</ion-title>
+          <ion-title size="large">Profile</ion-title>
         </ion-toolbar>
       </ion-header>
       
