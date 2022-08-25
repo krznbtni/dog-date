@@ -21,12 +21,16 @@ export interface IPark {
   // kommentarer
 }
 
-export interface IPet  {
+export interface IPet {
   id: number,
   name: string,
   age: string,
   bio: string,
   images: Array<string>,
+  size: 'small' | 'medium' | 'large',
+  type: 'sighthound',
+  breed: 'lurcher',
+  activityLevel: 'low' | 'medium' | 'high',
 }
 
 export interface IUser {

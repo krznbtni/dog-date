@@ -9,15 +9,30 @@
 
   <ion-card-content>{{pet.bio}}</ion-card-content>
 
-  <ion-grid>
+  <ion-grid class="grid">
     <ion-row>
-      <ion-col size="6">Ålder</ion-col>
-      <ion-col>{{pet.age}}</ion-col>
+      <ion-col size="6" class="ion-align-self-start">Age</ion-col>
+      <ion-col  class="ion-align-self-end">{{pet.age}}</ion-col>
     </ion-row>
 
     <ion-row>
-      <ion-col size="6"></ion-col>
-      <ion-col></ion-col>
+      <ion-col size="6" class="ion-align-self-start">Size</ion-col>
+      <ion-col  class="ion-align-self-end">{{pet.size}}</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6" class="ion-align-self-start">Type</ion-col>
+      <ion-col  class="ion-align-self-end">{{pet.type}}</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6" class="ion-align-self-start">Breed</ion-col>
+      <ion-col  class="ion-align-self-end">{{pet.breed}}</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6" class="ion-align-self-start">Activity Level</ion-col>
+      <ion-col  class="ion-align-self-end">{{pet.activityLevel}}</ion-col>
     </ion-row>
   </ion-grid>
 </ion-card>
@@ -34,6 +49,11 @@ const props = defineProps<{pet: IPet}>();
 <style>
 .image {
   margin: 0 auto 0 auto;
-  width: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.grid {
+  padding: 5px 15px 15px 15px;
 }
 </style>
