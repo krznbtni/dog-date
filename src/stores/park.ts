@@ -15,6 +15,7 @@ export const useParkStore = defineStore('park', () => {
 
 const parksList: Array<IPark> = [
   {
+    id: 0,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     distance: '850m',
     grounds: ['grass', 'gravel'],
@@ -30,6 +31,7 @@ const parksList: Array<IPark> = [
     },
   },
   {
+    id: 1,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     distance: '850m',
     grounds: ['grass', 'gravel'],
@@ -45,6 +47,7 @@ const parksList: Array<IPark> = [
     },
   },
   {
+    id: 2,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     distance: '850m',
     grounds: ['grass', 'gravel'],
@@ -60,6 +63,7 @@ const parksList: Array<IPark> = [
     },
   },
   {
+    id: 3,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     distance: '850m',
     grounds: ['grass', 'gravel'],

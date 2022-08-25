@@ -13,9 +13,9 @@ export const usePetStore = defineStore('pet', () => {
   return { pets }
 })
 
-const petsList: Array<IPet> =  [
-  {name: 'Bilbo', age: '4', img: '../../public/assets/bilbo-1.jpg'},
-  {name: 'Paj', age: '3', img: '../../public/assets/bilbo-1.jpg'},
-  {name: 'Sillen', age: '4', img: '../../public/assets/bilbo-1.jpg'},
-  {name: 'Elton', age: '1.5', img: '../../public/assets/bilbo-1.jpg'},
+const petsList: Array<IPet> = [
+  { id: 0, name: 'Bilbo', age: '4', images: ['../../public/assets/bilbo-1.jpg' ]},
+  { id: 1, name: 'Paj', age: '3', images: ['../../public/assets/bilbo-1.jpg' ]},
+  { id: 2, name: 'Sillen', age: '4', images: ['../../public/assets/bilbo-1.jpg' ]},
+  { id: 3, name: 'Elton', age: '1.5', images: ['../../public/assets/bilbo-1.jpg' ]},
 ];

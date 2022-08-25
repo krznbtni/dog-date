@@ -1,6 +1,7 @@
 type Ground = 'grass' | 'gravel';
 
 export interface IPark {
+  id: number,
   description: string,
   distance: string,
   grounds: Array<Ground>,
@@ -19,7 +20,8 @@ export interface IPark {
 }
 
 export interface IPet  {
+  id: number,
   name: string,
   age: string,
-  img: string,
+  images: Array<string>,
 }
