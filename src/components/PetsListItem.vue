@@ -4,7 +4,7 @@
       <img src="../../public/assets/bilbo-1.jpg" />
     </ion-avatar>
     <ion-label>
-      <h2>{{ pet.name }}, {{ pet.age }}</h2>
+      <h2>{{ pet.name }}</h2>
     </ion-label>
   </ion-item>
 </template>
