@@ -30,6 +30,10 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'profile',
         component: () => import('@/views/ProfilePage.vue')
+      },
+      {
+        path: 'profile/pets/:name',
+        component: () => import('@/views/PetPage.vue')
       }
     ]
   }

@@ -1,5 +1,5 @@
 <template>
-  <ion-item>
+  <ion-item button detail :href="`/profile/pets/${pet.name}`">
     <ion-avatar slot="start">
       <img src="../../public/assets/bilbo-1.jpg" />
     </ion-avatar>
