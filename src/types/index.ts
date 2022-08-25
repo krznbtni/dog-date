@@ -1,20 +1,22 @@
 type Ground = 'grass' | 'gravel';
 
+interface Address {
+  street: string,
+  zip: string,
+  city: string,
+}
+
 export interface IPark {
   id: number,
+  name: string,
   description: string,
+  rating: number,
   distance: string,
   grounds: Array<Ground>,
-  images: string[],
-  name: string,
-  numCurrentVisitors: number,
-  rating: number,
   size: string,
-  address: {
-    street: string,
-    zip: string,
-    city: string,
-  },
+  images: Array<string>,
+  numCurrentVisitors: number,
+  address: Address,
   // currentWeatherConditions,
   // kommentarer
 }
