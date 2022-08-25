@@ -20,23 +20,16 @@
 <script lang="ts" setup>
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import ParkCard from '@/components/ParkCard.vue';
-import {IPark} from '@/types';
+import {useRoute} from "vue-router";
+import {useParkStore} from '@/stores/park';
+import { storeToRefs } from 'pinia'
 
-const park: IPark = {
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  distance: '850m',
-  grounds: ['grass', 'gravel'],
-  images: ['/assets/hundrastgard.jpg'],
-  name: 'Sorgenfrivägen',
-  numCurrentVisitors: 5,
-  rating: 4,
-  size: '250m or something that makes sense',
-  address: {
-    street: 'Sorgenfrivägen',
-    zip: '214 41',
-    city: 'Malmö',
-  },
-};
+const route = useRoute();
+const store = useParkStore()
+const { parks } = storeToRefs(store)
+
+const {name} = route.params;
+const park = parks.value.find((p) => p.name === name);
 </script>
 
 <style>
