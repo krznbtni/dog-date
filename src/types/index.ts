@@ -27,3 +27,9 @@ export interface IPet  {
   age: string,
   images: Array<string>,
 }
+
+export interface IUser {
+  id: number,
+  name: string,
+  pets: Array<IPet>
+}
