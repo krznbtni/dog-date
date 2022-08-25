@@ -14,9 +14,9 @@ export const usePetStore = defineStore('pet', () => {
 })
 
 const petsList: Array<IPet> = [
-  { id: 0, name: 'Bilbo', age: '4', bio: '', images: ['../assets/bilbo-1.jpg' ]},
-  { id: 1, name: 'Paj', age: '3', bio: '', images: ['../assets/bilbo-1.jpg' ]},
-  { id: 2, name: 'Sillen', age: '4', bio: '', images: ['../assets/bilbo-1.jpg' ]},
-  { id: 3, name: 'Elton', age: '1.5', bio: '', images: ['../assets/bilbo-1.jpg' ]},
-  { id: 4, name: 'Malte', age: '1', bio: '', images: ['../assets/bilbo-1.jpg' ]},
+  { id: 0, name: 'Bilbo', age: '4', bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', images: ['../assets/bilbo-1.jpg' ]},
+  { id: 1, name: 'Paj', age: '3', bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', images: ['../assets/bilbo-1.jpg' ]},
+  { id: 2, name: 'Sillen', age: '4', bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', images: ['../assets/bilbo-1.jpg' ]},
+  { id: 3, name: 'Elton', age: '1.5', bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', images: ['../assets/bilbo-1.jpg' ]},
+  { id: 4, name: 'Malte', age: '1', bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', images: ['../assets/bilbo-1.jpg' ]},
 ];

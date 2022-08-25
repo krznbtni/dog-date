@@ -25,6 +25,7 @@ export interface IPet  {
   id: number,
   name: string,
   age: string,
+  bio: string,
   images: Array<string>,
 }
 
