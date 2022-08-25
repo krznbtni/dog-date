@@ -1,7 +1,6 @@
 <template>
   <ion-list>
     <ion-list-header> Recent Conversations </ion-list-header>
-
     <PetsListItem v-for="pet in pets" :key="pet.name" :pet="pet" />
   </ion-list>
 </template>
@@ -10,6 +9,7 @@
 import { IonList, IonListHeader } from '@ionic/vue';
 import PetsListItem from '@/components/PetsListItem.vue';
 import { defineProps } from 'vue';
+import { IPet } from '@/types';
 
-const props = defineProps<{pets: Array<{name: string, age: string, img: string}>}>();
+const props = defineProps<{pets: Array<IPet>}>();
 </script>

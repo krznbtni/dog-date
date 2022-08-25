@@ -20,8 +20,9 @@
 <script lang="ts" setup>
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import PetsList from '@/components/PetsList.vue';
+import { IPet } from '@/types';
 
-const pets =  [
+const pets: Array<IPet> =  [
   {name: 'Bilbo', age: '4', img: '../../public/assets/bilbo-1.jpg'},
   {name: 'Paj', age: '3', img: '../../public/assets/bilbo-1.jpg'},
   {name: 'Sillen', age: '4', img: '../../public/assets/bilbo-1.jpg'},

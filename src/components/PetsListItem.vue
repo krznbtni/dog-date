@@ -12,6 +12,7 @@
 <script lang="ts" setup>
 import { IonItem, IonAvatar, IonLabel } from '@ionic/vue';
 import {defineProps} from 'vue';
+import { IPet } from '@/types';
 
-const props = defineProps<{pet: {name: string, age: string, img: string}}>();
+const props = defineProps<{pet: IPet}>();
 </script>

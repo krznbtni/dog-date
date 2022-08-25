@@ -17,3 +17,9 @@ export interface IPark {
   // currentWeatherConditions,
   // kommentarer
 }
+
+export interface IPet  {
+  name: string,
+  age: string,
+  img: string,
+}
